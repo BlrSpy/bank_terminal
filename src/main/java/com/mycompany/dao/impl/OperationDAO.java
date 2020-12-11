@@ -20,7 +20,7 @@ public class OperationDAO extends AbstractDAO<Long, Operation> {
 
     @Override
     public List<Operation> getAll() {
-        final String SELECT_ALL_OPERATIONS = "SELECT * FROM mydbtgitest.operation";
+        final String SELECT_ALL_OPERATIONS = "SELECT * FROM mydbtest.operation";
 
         List<Operation> operations = new ArrayList<>();
         PreparedStatement preparedStatement = getPrepareStatement(SELECT_ALL_OPERATIONS);
