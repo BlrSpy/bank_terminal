@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import static java.util.concurrent.TimeUnit.HOURS;
+
 public class ExchangeRatesInformer extends Thread {
     private static final Logger logger = LoggerFactory.getLogger(ExchangeRatesInformer.class);
 
@@ -48,7 +50,7 @@ public class ExchangeRatesInformer extends Thread {
             }
 
             try {
-                TimeUnit.HOURS.sleep(1);
+                HOURS.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

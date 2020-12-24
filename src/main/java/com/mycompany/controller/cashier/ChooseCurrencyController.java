@@ -127,7 +127,7 @@ public class ChooseCurrencyController {
         });
     }
 
-    private void makeExchange(String currencyValueFrom, String currencyValueTo, String sum) {
+    private void makeExchange(String currencyValueFrom, String currencyValueTo, String sum) throws UnsupportedOperationException {
 //        ExchangeVolume.EXCHANGE_VOLUME.
         throw new UnsupportedOperationException();
     }

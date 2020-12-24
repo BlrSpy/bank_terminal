@@ -20,6 +20,7 @@ com\mycompany\controller\admin\UpdateCashierController.class
 com\mycompany\util\CurrencyNodeProcessor.class
 com\mycompany\controller\cashier\ChooseCurrencyController.class
 com\mycompany\exception\ConnectionPoolException.class
+com\mycompany\controller\cashier\PayForMobPhoneController.class
 com\mycompany\domain\impl\ExchangeRates.class
 com\mycompany\factory\impl\OperationFactory.class
 com\mycompany\util\CurrencyConverter.class
