@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="748.0" style="-fx-background-color: FF6978;" xmlns="http://javafx.com/javafx/11.0.1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="748.0" style="-fx-background-color: FF6978;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.controller.cashier.NextStepToPayMobPhoneController">
    <children>
       <AnchorPane layoutX="-4.0" layoutY="75.0" prefHeight="446.0" prefWidth="754.0" style="-fx-background-color: B1EDE8;">
          <children>
@@ -16,7 +16,7 @@
                   <Font name="Myanmar Text" size="16.0" />
                </font>
             </Text>
-            <TextField alignment="CENTER" layoutX="14.0" layoutY="102.0" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #FFFCF9;">
+            <TextField fx:id="PhoneNumberField" alignment="CENTER" layoutX="14.0" layoutY="102.0" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #FFFCF9;">
                <font>
                   <Font name="Myanmar Text" size="15.0" />
                </font>
@@ -31,22 +31,22 @@
                   <Font name="Myanmar Text" size="16.0" />
                </font>
             </Text>
-            <TextField alignment="CENTER" layoutX="14.0" layoutY="184.0" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #FFFCF9;">
+            <TextField fx:id="NameField" alignment="CENTER" layoutX="14.0" layoutY="184.0" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #FFFCF9;">
                <font>
                   <Font name="Myanmar Text" size="15.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" layoutX="14.0" layoutY="268.0" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #FFFCF9;">
+            <TextField fx:id="SurnameField" alignment="CENTER" layoutX="14.0" layoutY="268.0" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #FFFCF9;">
                <font>
                   <Font name="Myanmar Text" size="15.0" />
                </font>
             </TextField>
-            <Button layoutX="540.0" layoutY="381.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #FFFCF9; -fx-border-color: #352D39;" text="Print bill" textFill="#352d39">
+            <Button fx:id="PrintBillButton" layoutX="540.0" layoutY="381.0" mnemonicParsing="false" onAction="#onPrintBillButtonClick" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #FFFCF9; -fx-border-color: #352D39;" text="Print bill" textFill="#352d39">
                <font>
                   <Font name="Myanmar Text" size="16.0" />
                </font>
             </Button>
-            <Button layoutX="302.0" layoutY="231.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="140.0" style="-fx-background-color: #FFFCF9; -fx-border-color: #352D39;" text="Top up account" textFill="#352d39">
+            <Button fx:id="TopUpButton" layoutX="302.0" layoutY="231.0" mnemonicParsing="false" onAction="#onTopUpButtonClick" prefHeight="15.0" prefWidth="140.0" style="-fx-background-color: #FFFCF9; -fx-border-color: #352D39;" text="Top up account" textFill="#352d39">
                <font>
                   <Font name="Myanmar Text" size="16.0" />
                </font>
@@ -56,7 +56,7 @@
                   <Font name="Myanmar Text" size="16.0" />
                </font>
             </Text>
-            <TextField alignment="CENTER" layoutX="258.0" layoutY="166.0" prefHeight="51.0" prefWidth="228.0" promptText="Enter the amount">
+            <TextField fx:id="AmountField" alignment="CENTER" layoutX="258.0" layoutY="166.0" prefHeight="51.0" prefWidth="228.0" promptText="Enter the amount">
                <font>
                   <Font name="Myanmar Text" size="15.0" />
                </font>
@@ -66,7 +66,7 @@
                   <Font name="Tw Cen MT" size="30.0" />
                </font>
             </Text>
-            <Button layoutX="36.0" layoutY="381.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="88.0" style="-fx-background-color: #FFFCF9; -fx-border-color: #352D39;" text="Back" textFill="#352d39">
+            <Button fx:id="BackButton" layoutX="36.0" layoutY="381.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="51.0" prefWidth="88.0" style="-fx-background-color: #FFFCF9; -fx-border-color: #352D39;" text="Back" textFill="#352d39">
                <font>
                   <Font name="Myanmar Text" size="16.0" />
                </font>

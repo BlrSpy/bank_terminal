@@ -1,3 +1,4 @@
+com\mycompany\controller\cashier\NextStepToPayMobPhoneController.class
 com\mycompany\domain\impl\Admin.class
 com\mycompany\controller\admin\CrudCashierController.class
 com\mycompany\util\PropertyReader.class
@@ -16,6 +17,7 @@ com\mycompany\dao\impl\AdminDAO.class
 com\mycompany\App.class
 com\mycompany\domain\impl\OperationType.class
 com\mycompany\domain\impl\ApplicationProperties.class
+com\mycompany\domain\impl\MobilePhoneData.class
 com\mycompany\controller\admin\UpdateCashierController.class
 com\mycompany\util\CurrencyNodeProcessor.class
 com\mycompany\controller\cashier\ChooseCurrencyController.class

@@ -21,7 +21,7 @@
                   <Font name="Myanmar Text" size="20.0" />
                </font>
             </Text>
-            <Button fx:id="NextButton" layoutX="318.0" layoutY="308.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="107.0" style="-fx-background-color: #FFFCF9; -fx-border-color: #352D39;" text="Next" textFill="#352d39">
+            <Button fx:id="NextButton" layoutX="318.0" layoutY="308.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="61.0" prefWidth="107.0" style="-fx-background-color: #FFFCF9; -fx-border-color: #352D39;" text="Next" textFill="#352d39">
                <font>
                   <Font name="Myanmar Text" size="20.0" />
                </font>
@@ -51,7 +51,7 @@
                   <Font name="Myanmar Text" size="20.0" />
                </font>
             </Text>
-            <Button fx:id="BackButton" layoutX="33.0" layoutY="338.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="88.0" style="-fx-background-color: #FFFCF9; -fx-border-color: #352D39;" text="Back" textFill="#352d39">
+            <Button fx:id="BackButton" layoutX="33.0" layoutY="338.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="51.0" prefWidth="88.0" style="-fx-background-color: #FFFCF9; -fx-border-color: #352D39;" text="Back" textFill="#352d39">
                <font>
                   <Font name="Myanmar Text" size="16.0" />
                </font>

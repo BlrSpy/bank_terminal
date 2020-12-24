@@ -39,6 +39,7 @@ C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\dao\impl\
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\ExchangeVolume.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\OperationType.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\LimitExchangeVolumeController.java
+C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\cashier\PayForMobPhoneController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\App.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\cashier\InputCientsDataController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\InputDataStorage.java
