@@ -94,9 +94,7 @@ public enum  ApplicationProperties {
         this.viewOperationHistory = viewOperationHistory;
     }
 
-    public String getBill() {
-        return bill;
-    }
+    public String getBill() { return bill; }
 
     public void setBill(String bill) {
         this.bill = bill;

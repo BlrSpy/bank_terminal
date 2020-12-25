@@ -1,4 +1,5 @@
 com\mycompany\controller\cashier\NextStepToPayMobPhoneController.class
+com\mycompany\factory\impl\MobileOperationFactory.class
 com\mycompany\domain\impl\Admin.class
 com\mycompany\controller\admin\CrudCashierController.class
 com\mycompany\util\PropertyReader.class
@@ -7,6 +8,7 @@ com\mycompany\controller\AuthController.class
 com\mycompany\domain\impl\CurrencyType.class
 com\mycompany\util\AlertDialog.class
 com\mycompany\domain\Entity.class
+com\mycompany\dao\impl\Mobile_OperationsDAO.class
 com\mycompany\controller\admin\ViewOperationHistoryController.class
 com\mycompany\controller\admin\ChangeRatesController.class
 com\mycompany\domain\impl\Cashier.class
@@ -19,6 +21,7 @@ com\mycompany\domain\impl\OperationType.class
 com\mycompany\domain\impl\ApplicationProperties.class
 com\mycompany\domain\impl\MobilePhoneData.class
 com\mycompany\controller\admin\UpdateCashierController.class
+com\mycompany\domain\impl\Mobile_Operations.class
 com\mycompany\util\CurrencyNodeProcessor.class
 com\mycompany\controller\cashier\ChooseCurrencyController.class
 com\mycompany\exception\ConnectionPoolException.class
@@ -36,6 +39,7 @@ com\mycompany\exception\InvalidStateException.class
 com\mycompany\domain\impl\ExchangeVolume.class
 com\mycompany\util\ExchangeRatesInformer.class
 com\mycompany\domain\impl\Operation.class
+com\mycompany\controller\cashier\BillController.class
 com\mycompany\controller\cashier\CashierMenuController.class
 com\mycompany\factory\AbstractFactory.class
 com\mycompany\dao\impl\OperationDAO.class

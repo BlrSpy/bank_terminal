@@ -5,7 +5,6 @@ package com.mycompany.controller.cashier;
 import com.mycompany.App;
 import com.mycompany.dao.AbstractDAO;
 import com.mycompany.dao.impl.Mobile_OperationsDAO;
-import com.mycompany.dao.impl.OperationDAO;
 import com.mycompany.domain.impl.ApplicationProperties;
 import com.mycompany.domain.impl.MobilePhoneData;
 import com.mycompany.factory.impl.MobileOperationFactory;
@@ -42,6 +41,7 @@ public class NextStepToPayMobPhoneController {
     @FXML
     private Button BackButton;
 
+    private boolean checkIsPayment;
 
     @FXML
     void initialize() {
@@ -67,7 +67,17 @@ public class NextStepToPayMobPhoneController {
 
     @FXML
     void onPrintBillButtonClick(ActionEvent event) {
-
+        PrintBillButton.setOnAction(actionEvent -> {
+            if (!checkIsPayment) {
+                AlertDialog.showAlert(Alert.AlertType.ERROR, AmountField.getScene().getWindow(),
+                        "Print bill Error!", "Please make a payment first.");
+                return;
+                }
+            else {
+                FXMLLoader loader = App.loadFXML(ApplicationProperties.APPLICATION_PROPERTIES.getBill());
+                App.changeScene(actionEvent, loader);
+            }
+        });
     }
 
     @FXML
@@ -78,13 +88,21 @@ public class NextStepToPayMobPhoneController {
 
                 if (AmountField.getText().isEmpty()) {
                     AlertDialog.showAlert(Alert.AlertType.ERROR, AmountField.getScene().getWindow(),
-                            "Form Error!", "Please enter the amount name");
+                            "Form Error!", "Please enter the amount.");
                     return;
                 }
 
-                abstractDAO.create(MobileOperationFactory.MOBILE_OPERATION_FACTORY.create(PhoneNumberField.getText().trim(),
+                checkIsPayment = abstractDAO.create(MobileOperationFactory.MOBILE_OPERATION_FACTORY.create(PhoneNumberField.getText().trim(),
                         NameField.getText().trim(), SurnameField.getText().trim(), AmountField.getText().trim()));
 
+                if (!checkIsPayment) {
+                    return;
+                }
+                else {
+                    AlertDialog.showAlert(Alert.AlertType.INFORMATION, TopUpButton.getScene().getWindow(),
+                            "Payment Successful!", "You have just paid " + AmountField.getText() + " byn on your mobile phone.");
+
+                }
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
