@@ -2,7 +2,6 @@ package com.mycompany.controller.cashier;
 
 import com.mycompany.App;
 import com.mycompany.domain.impl.ApplicationProperties;
-import com.mycompany.domain.impl.ExchangeVolume;
 import com.mycompany.util.AlertDialog;
 import com.mycompany.util.InputDataStorage;
 import javafx.fxml.FXML;
