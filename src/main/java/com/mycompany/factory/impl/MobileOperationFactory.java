@@ -1,6 +1,6 @@
 package com.mycompany.factory.impl;
 
-import com.mycompany.domain.impl.Mobile_Operations;
+import com.mycompany.domain.impl.MobileOperations;
 
 
 public class MobileOperationFactory {
@@ -8,8 +8,8 @@ public class MobileOperationFactory {
 
     private MobileOperationFactory() {}
 
-    public Mobile_Operations create(String mobile_phone, String clientName, String clientSurname, String Sum) {
-        Mobile_Operations mobOperation = new Mobile_Operations();
+    public MobileOperations create(String mobile_phone, String clientName, String clientSurname, String Sum) {
+        MobileOperations mobOperation = new MobileOperations();
 
         mobOperation.setMobilePhone(mobile_phone);
         mobOperation.setClientName(clientName);
@@ -19,8 +19,8 @@ public class MobileOperationFactory {
         return mobOperation;
     }
 
-    public Mobile_Operations create(long id, String mobile_phone, String ClientName, String ClientSurname, String Sum) {
-        Mobile_Operations mobOperation = new Mobile_Operations();
+    public MobileOperations create(long id, String mobile_phone, String ClientName, String ClientSurname, String Sum) {
+        MobileOperations mobOperation = new MobileOperations();
 
         mobOperation.setMobileOperationId(id);
         mobOperation.setMobilePhone(mobile_phone);

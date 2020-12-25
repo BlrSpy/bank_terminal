@@ -1,9 +1,7 @@
 package com.mycompany.dao.impl;
 
 import com.mycompany.dao.AbstractDAO;
-import com.mycompany.domain.impl.Mobile_Operations;
-import com.mycompany.domain.impl.Operation;
-import com.mycompany.factory.impl.MobileOperationFactory;
+import com.mycompany.domain.impl.MobileOperations;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,26 +12,26 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class Mobile_OperationsDAO extends AbstractDAO<Long, Mobile_Operations> {
+public class MobileOperationsDAO extends AbstractDAO<Long, MobileOperations> {
 
     private static final Logger logger = LoggerFactory.getLogger(CashierDAO.class);
 
-    public Mobile_OperationsDAO() throws SQLException {
+    public MobileOperationsDAO() throws SQLException {
     }
 
     @Override
-    public List<Mobile_Operations> getAll() {
+    public List<MobileOperations> getAll() {
         final String SELECT_ALL_Mobile_Operations = "SELECT * FROM mydbtest.mobile_operations";
 
-        List<Mobile_Operations> Mobile_Operations = new ArrayList<>();
+        List<MobileOperations> Mobile_Operations = new ArrayList<>();
         PreparedStatement preparedStatement = getPrepareStatement(SELECT_ALL_Mobile_Operations);
         try {
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                Mobile_Operations mobOperations = new Mobile_Operations();
+                MobileOperations mobOperations = new MobileOperations();
 
                 mobOperations.setMobileOperationId(resultSet.getInt("id"));
-                mobOperations.setMobilePhone(resultSet.getString("=mobile_phone"));
+                mobOperations.setMobilePhone(resultSet.getString("mobile_phone"));
                 mobOperations.setClientName(resultSet.getString("name"));
                 mobOperations.setClientSurname(resultSet.getString("surname"));
                 mobOperations.setSum(resultSet.getString("Sum"));
@@ -51,10 +49,10 @@ public class Mobile_OperationsDAO extends AbstractDAO<Long, Mobile_Operations> {
     }
 
     @Override
-    public Optional<Mobile_Operations> getEntityById(Long id) {
+    public Optional<MobileOperations> getEntityById(Long id) {
         final String FIND_BY_ID = "SELECT * FROM mydbtest.mobile_operations WHERE id='" + id + "'";
 
-        Mobile_Operations mobOperations = null;
+        MobileOperations mobOperations = null;
         PreparedStatement preparedStatement = null;
         try {
             try {
@@ -64,10 +62,10 @@ public class Mobile_OperationsDAO extends AbstractDAO<Long, Mobile_Operations> {
                     resultSet = preparedStatement.executeQuery();
 
                     while (resultSet.next()) {
-                        mobOperations = new Mobile_Operations();
+                        mobOperations = new MobileOperations();
 
                         mobOperations.setMobileOperationId(resultSet.getInt("id"));
-                        mobOperations.setMobilePhone(resultSet.getString("=mobile_phone"));
+                        mobOperations.setMobilePhone(resultSet.getString("mobile_phone"));
                         mobOperations.setClientName(resultSet.getString("name"));
                         mobOperations.setClientSurname(resultSet.getString("surname"));
                         mobOperations.setSum(resultSet.getString("Sum"));
@@ -93,7 +91,7 @@ public class Mobile_OperationsDAO extends AbstractDAO<Long, Mobile_Operations> {
     }
 
     @Override
-    public Mobile_Operations update(Mobile_Operations entity) {
+    public MobileOperations update(MobileOperations entity) {
         final String UPDATE_Mobile_Operation = "UPDATE mydbtest.mobile_operations SET mobile_phone = '" + entity.getMobilePhone()
                 + "', name = '" + entity.getClientName()
                 + "', surname =  '" + entity.getClientSurname()
@@ -131,7 +129,7 @@ public class Mobile_OperationsDAO extends AbstractDAO<Long, Mobile_Operations> {
     }
 
     @Override
-    public boolean create(Mobile_Operations entity) {
+    public boolean create(MobileOperations entity) {
         final String INSERT_Mobile_Operation = "INSERT INTO mydbtest.mobile_operations (mobile_phone, name, surname, Sum) values ('"
                 + entity.getMobilePhone()
                 + "', '" + entity.getClientName()

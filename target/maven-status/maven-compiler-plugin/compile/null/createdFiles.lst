@@ -2,6 +2,7 @@ com\mycompany\controller\cashier\NextStepToPayMobPhoneController.class
 com\mycompany\factory\impl\MobileOperationFactory.class
 com\mycompany\domain\impl\Admin.class
 com\mycompany\controller\admin\CrudCashierController.class
+com\mycompany\controller\admin\ViewMobileOperationHistoryController.class
 com\mycompany\util\PropertyReader.class
 com\mycompany\util\BankDataProcessor.class
 com\mycompany\controller\AuthController.class
@@ -26,6 +27,7 @@ com\mycompany\util\CurrencyNodeProcessor.class
 com\mycompany\controller\cashier\ChooseCurrencyController.class
 com\mycompany\exception\ConnectionPoolException.class
 com\mycompany\controller\cashier\PayForMobPhoneController.class
+com\mycompany\controller\admin\ViewOperationController.class
 com\mycompany\domain\impl\ExchangeRates.class
 com\mycompany\factory\impl\OperationFactory.class
 com\mycompany\util\CurrencyConverter.class

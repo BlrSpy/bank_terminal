@@ -1,6 +1,7 @@
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\cashier\ChooseCurrencyController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\DeleteCashierController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\Admin.java
+C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\cashier\BillController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\module-info.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\ApplicationContext.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\CreateCashierController.java
@@ -10,6 +11,7 @@ C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\Curr
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\PropertyReader.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\dao\impl\CashierDAO.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\factory\impl\OperationFactory.java
+C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\ViewOperationController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\Operation.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\IsLoggedChecker.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\CurrencyType.java
@@ -46,6 +48,7 @@ C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\factory\i
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\ApplicationProperties.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\Mobile_Operations.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\OperationType.java
+C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\ViewMobileOperationHistoryController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\LimitExchangeVolumeController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\InputDataStorage.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\factory\impl\MobileOperationFactory.java

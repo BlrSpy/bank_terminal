@@ -4,43 +4,43 @@ import com.mycompany.domain.Entity;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-public class Mobile_Operations extends Entity {
-    private SimpleLongProperty mobile_operationId;
+public class MobileOperations extends Entity {
+    private SimpleLongProperty mobileOperationId;
+    private SimpleStringProperty mobilePhone;
     private SimpleStringProperty clientName;
     private SimpleStringProperty clientSurname;
-    private SimpleStringProperty mobile_phone;
     private SimpleStringProperty Sum;
 
-    public Mobile_Operations() {
+    public MobileOperations() {
         long currentId = getId();
         setId(currentId++);
     }
 
-    public Mobile_Operations (String mobile_phone, String clientName, String clientSurname, String Sum) {
+    public MobileOperations(String mobile_phone, String clientName, String clientSurname, String Sum) {
         long currentId = getId();
         setId(currentId++);
+        this.mobilePhone = new SimpleStringProperty(mobile_phone);
         this.clientName = new SimpleStringProperty(clientName);
         this.clientSurname = new SimpleStringProperty(clientSurname);
-        this.mobile_phone = new SimpleStringProperty(mobile_phone);
         this.Sum = new SimpleStringProperty(Sum);
     }
 
-    public Mobile_Operations (Long mobile_operationId, String mobile_phone, String clientName, String clientSurname, String Sum) {
+    public MobileOperations(Long mobile_operationId, String mobile_phone, String clientName, String clientSurname, String Sum) {
         long currentId = getId();
         setId(currentId++);
-        this.mobile_operationId = new SimpleLongProperty(mobile_operationId);
+        this.mobileOperationId = new SimpleLongProperty(mobile_operationId);
+        this.mobilePhone = new SimpleStringProperty(mobile_phone);
         this.clientName = new SimpleStringProperty(clientName);
         this.clientSurname = new SimpleStringProperty(clientSurname);
-        this.mobile_phone = new SimpleStringProperty(mobile_phone);
         this.Sum = new SimpleStringProperty(Sum);
     }
 
     public long getMobileOperationId() {
-        return mobile_operationId.get();
+        return mobileOperationId.get();
     }
 
     public void setMobileOperationId(long mobile_operationId) {
-        this.mobile_operationId = new SimpleLongProperty(mobile_operationId);
+        this.mobileOperationId = new SimpleLongProperty(mobile_operationId);
     }
 
     public String getClientName() {
@@ -60,11 +60,11 @@ public class Mobile_Operations extends Entity {
     }
 
     public String getMobilePhone() {
-        return mobile_phone.get();
+        return mobilePhone.get();
     }
 
     public void setMobilePhone(String mobilePhone) {
-        this.mobile_phone = new SimpleStringProperty(mobilePhone);
+        this.mobilePhone = new SimpleStringProperty(mobilePhone);
     }
 
     public void setSum(String Sum) {

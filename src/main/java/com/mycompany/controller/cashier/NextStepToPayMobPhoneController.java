@@ -4,7 +4,7 @@ package com.mycompany.controller.cashier;
 
 import com.mycompany.App;
 import com.mycompany.dao.AbstractDAO;
-import com.mycompany.dao.impl.Mobile_OperationsDAO;
+import com.mycompany.dao.impl.MobileOperationsDAO;
 import com.mycompany.domain.impl.ApplicationProperties;
 import com.mycompany.domain.impl.MobilePhoneData;
 import com.mycompany.factory.impl.MobileOperationFactory;
@@ -84,7 +84,7 @@ public class NextStepToPayMobPhoneController {
     void onTopUpButtonClick(ActionEvent event) {
         TopUpButton.setOnAction(actionEvent -> {
             try {
-                AbstractDAO abstractDAO = new Mobile_OperationsDAO();
+                AbstractDAO abstractDAO = new MobileOperationsDAO();
                 String sum = AmountField.getText().trim();
 
                 if (AmountField.getText().isEmpty()) {
