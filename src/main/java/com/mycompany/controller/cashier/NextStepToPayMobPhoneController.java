@@ -85,12 +85,15 @@ public class NextStepToPayMobPhoneController {
         TopUpButton.setOnAction(actionEvent -> {
             try {
                 AbstractDAO abstractDAO = new Mobile_OperationsDAO();
+                String sum = AmountField.getText().trim();
 
                 if (AmountField.getText().isEmpty()) {
                     AlertDialog.showAlert(Alert.AlertType.ERROR, AmountField.getScene().getWindow(),
                             "Form Error!", "Please enter the amount.");
                     return;
                 }
+
+                MobilePhoneData.getInstance().setSumField(sum);
 
                 checkIsPayment = abstractDAO.create(MobileOperationFactory.MOBILE_OPERATION_FACTORY.create(PhoneNumberField.getText().trim(),
                         NameField.getText().trim(), SurnameField.getText().trim(), AmountField.getText().trim()));

@@ -5,6 +5,7 @@ public class MobilePhoneData {
     private String MobilePhoneField;
     private String NameField;
     private String SurnameField;
+    private String SumField;
 
     private MobilePhoneData() {}
 
@@ -36,6 +37,13 @@ public class MobilePhoneData {
     }
     public void setMobilePhoneField(String MobilePhone) {
         this.MobilePhoneField = MobilePhone;
+    }
+
+    public String getSumField() {
+        return SumField;
+    }
+    public void setSumField(String Sum) {
+        this.SumField = Sum;
     }
 }
 
