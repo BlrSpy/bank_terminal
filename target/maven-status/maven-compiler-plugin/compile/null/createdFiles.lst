@@ -9,9 +9,9 @@ com\mycompany\controller\AuthController.class
 com\mycompany\domain\impl\CurrencyType.class
 com\mycompany\util\AlertDialog.class
 com\mycompany\domain\Entity.class
-com\mycompany\dao\impl\Mobile_OperationsDAO.class
 com\mycompany\controller\admin\ViewOperationHistoryController.class
 com\mycompany\controller\admin\ChangeRatesController.class
+com\mycompany\domain\impl\MobileOperations.class
 com\mycompany\domain\impl\Cashier.class
 com\mycompany\util\ConnectionPool.class
 com\mycompany\factory\impl\CashierFactory.class
@@ -22,7 +22,6 @@ com\mycompany\domain\impl\OperationType.class
 com\mycompany\domain\impl\ApplicationProperties.class
 com\mycompany\domain\impl\MobilePhoneData.class
 com\mycompany\controller\admin\UpdateCashierController.class
-com\mycompany\domain\impl\Mobile_Operations.class
 com\mycompany\util\CurrencyNodeProcessor.class
 com\mycompany\controller\cashier\ChooseCurrencyController.class
 com\mycompany\exception\ConnectionPoolException.class
@@ -47,6 +46,7 @@ com\mycompany\factory\AbstractFactory.class
 com\mycompany\dao\impl\OperationDAO.class
 com\mycompany\ApplicationContext.class
 com\mycompany\domain\impl\CurrencyNode.class
+com\mycompany\dao\impl\MobileOperationsDAO.class
 com\mycompany\controller\admin\AdminMenuController.class
 com\mycompany\dao\impl\CashierDAO.class
 com\mycompany\dao\AbstractDAO.class

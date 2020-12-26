@@ -5,7 +5,6 @@ import com.mycompany.ApplicationContext;
 import com.mycompany.dao.impl.CashierDAO;
 import com.mycompany.domain.impl.ApplicationProperties;
 import com.mycompany.domain.impl.Cashier;
-import com.mycompany.exception.InvalidStateException;
 import com.mycompany.util.AlertDialog;
 import com.mycompany.util.IsLoggedChecker;
 import javafx.fxml.FXML;

@@ -48,9 +48,6 @@ public class ReadCashiersController {
     private TableColumn<Entity, String> loginCol;
 
     @FXML
-    private TableColumn<Entity, String> passwordCol;
-
-    @FXML
     void initialize() {
         try {
             AbstractDAO abstractDAO = new CashierDAO();
@@ -65,7 +62,6 @@ public class ReadCashiersController {
             surnameCol.setCellValueFactory(new PropertyValueFactory<>("surname"));
             mobPhoneCol.setCellValueFactory(new PropertyValueFactory<>("mobilePhone"));
             loginCol.setCellValueFactory(new PropertyValueFactory<>("login"));
-            passwordCol.setCellValueFactory(new PropertyValueFactory<>("password"));
 
             userTable.setItems(entities);
 
@@ -81,4 +77,5 @@ public class ReadCashiersController {
             App.changeScene(actionEvent, loader);
         });
     }
+
 }
