@@ -12,6 +12,7 @@ com\mycompany\domain\Entity.class
 com\mycompany\controller\admin\ViewOperationHistoryController.class
 com\mycompany\controller\admin\ChangeRatesController.class
 com\mycompany\domain\impl\MobileOperations.class
+com\mycompany\controller\cashier\ExchangeBillController.class
 com\mycompany\domain\impl\Cashier.class
 com\mycompany\util\ConnectionPool.class
 com\mycompany\factory\impl\CashierFactory.class

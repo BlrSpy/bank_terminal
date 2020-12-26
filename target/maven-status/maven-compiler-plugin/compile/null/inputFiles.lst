@@ -6,6 +6,7 @@ C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\module-info.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\ApplicationContext.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\CreateCashierController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\AuthController.java
+C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\MobileOperations.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\ConnectionPool.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\CurrencyNodeProcessor.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\PropertyReader.java
@@ -27,7 +28,6 @@ C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controlle
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\App.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\cashier\InputCientsDataController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\CurrencyConverter.java
-C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\dao\impl\Mobile_OperationsDAO.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\BankDataProcessor.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\util\AlertDialog.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\factory\AbstractFactory.java
@@ -35,6 +35,7 @@ C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controlle
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\UpdateCashierController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\cashier\NextStepToPayMobPhoneController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\ViewOperationHistoryController.java
+C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\dao\impl\MobileOperationsDAO.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\dao\impl\OperationDAO.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\ExchangeRates.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\CurrencyNode.java
@@ -46,7 +47,6 @@ C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\exception
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\exception\InvalidStateException.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\factory\impl\CashierFactory.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\ApplicationProperties.java
-C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\Mobile_Operations.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\domain\impl\OperationType.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\ViewMobileOperationHistoryController.java
 C:\Users\Maksim\IdeaProjects\bank_terminal\src\main\java\com\mycompany\controller\admin\LimitExchangeVolumeController.java
